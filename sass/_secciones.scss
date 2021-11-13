@@ -1,24 +1,7 @@
 .seccion1{
     text-align: center;
     .botones{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        a{
-            text-decoration: none;
-            color: white;
-            padding: 1rem 2rem;
-            
-        }
-        .boton1{
-            background-color: $strongCyan;
-            border: 2px;
-            border-radius: 1.5rem;
-        }
-        .boton2{
-            background-color: $lightBlue;
-            border: 2px;
-            border-radius: 1.5rem;
-        }
+        @include botones;
     }
 }
 
@@ -63,4 +46,42 @@
 
 .seccion4{
     margin-top: 5rem;
+    .iconos{
+        margin: 5rem 5rem 0 5rem;
+        display: flex;
+        img{
+            margin-bottom: 2rem;
+            width: 10%;
+            height: 15%;
+        }
+        h3{
+            padding: 1rem;
+        }
+        .iconoCol{
+            text-align: center;
+            width: 33%;
+            padding: .5rem;
+            p{
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .iconos2{
+        display: flex;
+        margin-top: 5rem;
+        justify-content: center;
+        gap: 5.5rem;
+        
+    }
+}
+
+.seccion5{
+    margin-top: 5rem;
+    text-align: center;
+    p{
+        line-height: 1.5rem;
+    }
+    .botones{
+        @include botones;
+    }
 }

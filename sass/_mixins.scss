@@ -1,3 +1,29 @@
 @mixin subTitulo{
     color: $darkGrayishBlue;
 }
+@mixin boton1{
+    background-color: $strongCyan;
+    border: 2px;
+    border-radius: 1.5rem;
+}
+@mixin boton2{
+    background-color: $lightBlue;
+    border: 2px;
+    border-radius: 1.5rem;
+}
+@mixin botones{    
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem 2rem;
+            
+        }
+        .boton1{
+            @include boton1;
+        }
+        .boton2{
+            @include boton2
+        }
+    }
