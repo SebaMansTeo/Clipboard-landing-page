@@ -57,12 +57,32 @@ p {
 .seccion2 {
   margin-top: 10rem; }
   .seccion2 .computerGrid {
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr; }
     .seccion2 .computerGrid img {
       width: 100%;
       margin-left: -1.7rem; }
     .seccion2 .computerGrid .computerText {
-      padding: 3rem 0 0 4rem; }
+      padding: 3rem 0 0 4rem;
+      width: 65%; }
+      .seccion2 .computerGrid .computerText h3 {
+        margin-bottom: .5rem; }
       .seccion2 .computerGrid .computerText p {
-        text-align: left; }
+        text-align: left;
+        margin-bottom: 3rem;
+        line-height: 1.5rem; }
+
+.seccion3 {
+  margin-top: 5rem; }
+  .seccion3 p {
+    line-height: 1.5rem; }
+
+.imgCel {
+  text-align: center;
+  margin-top: 5rem; }
+  .imgCel img {
+    width: 60%; }
+
+.seccion4 {
+  margin-top: 5rem; }
