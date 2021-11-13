@@ -1,0 +1,41 @@
+.seccion1{
+    text-align: center;
+    .botones{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem 2rem;
+            
+        }
+        .boton1{
+            background-color: $strongCyan;
+            border: 2px;
+            border-radius: 1.5rem;
+        }
+        .boton2{
+            background-color: $lightBlue;
+            border: 2px;
+            border-radius: 1.5rem;
+        }
+    }
+}
+
+.seccion2{
+    margin-top: 10rem;
+    .computerGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 100%;
+            margin-left: -1.7rem;
+        }
+        .computerText{
+            padding: 3rem 0 0 4rem;
+            p{
+                text-align: left;
+            }
+        }
+    }
+}

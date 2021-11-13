@@ -1,0 +1,68 @@
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px; }
+
+header {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/bg-header-desktop.png);
+  position: relative; }
+  header img {
+    margin: 8rem 0 4rem 34rem; }
+
+h1, h2 {
+  color: #4c545d;
+  text-align: center; }
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: .8rem; }
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: .8rem; }
+
+p {
+  text-align: center;
+  color: #9fabb2;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.seccion1 {
+  text-align: center; }
+  .seccion1 .botones {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .seccion1 .botones a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem 2rem; }
+    .seccion1 .botones .boton1 {
+      background-color: #26baa4;
+      border: 2px;
+      border-radius: 1.5rem; }
+    .seccion1 .botones .boton2 {
+      background-color: #6173ff;
+      border: 2px;
+      border-radius: 1.5rem; }
+
+.seccion2 {
+  margin-top: 10rem; }
+  .seccion2 .computerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .seccion2 .computerGrid img {
+      width: 100%;
+      margin-left: -1.7rem; }
+    .seccion2 .computerGrid .computerText {
+      padding: 3rem 0 0 4rem; }
+      .seccion2 .computerGrid .computerText p {
+        text-align: left; }
