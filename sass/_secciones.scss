@@ -3,10 +3,16 @@
     .botones{
         @include botones;
     }
+    .boton1:hover{
+        @include botonHover;
+    }
+    .boton2:hover{
+        @include botonHover;
+    }
 }
 
 .seccion2{
-    margin-top: 10rem;
+    margin-top: 8rem;
     .computerGrid{
         margin-top: 5rem;
         display: grid;
@@ -20,21 +26,19 @@
             width: 65%;
             h3{
                 margin-bottom: .5rem;
+                font-size: 1.5rem;
             }
             p{
                 text-align: left;
+                font-size: 1rem;
                 margin-bottom: 3rem;
-                line-height: 1.5rem;
             }
         }
     }
 }
 
 .seccion3{
-    margin-top: 5rem;
-    p{
-        line-height: 1.5rem;
-    }    
+    margin-top: 7rem;
 }
 .imgCel{
     text-align: center;
@@ -60,28 +64,100 @@
         .iconoCol{
             text-align: center;
             width: 33%;
-            padding: .5rem;
+            padding: 2rem;
             p{
-                line-height: 1.5rem;
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (max-width: 1354px){
+            .iconoCol{
+                padding: .2rem;
             }
         }
     }
     .iconos2{
         display: flex;
-        margin-top: 5rem;
+        margin-top: 7rem;
         justify-content: center;
         gap: 5.5rem;
-        
     }
+   
 }
 
 .seccion5{
-    margin-top: 5rem;
+    margin-top: 7rem;
     text-align: center;
-    p{
-        line-height: 1.5rem;
-    }
     .botones{
         @include botones;
     }
+    .boton1:hover{
+        @include botonHover;
+    }
+    .boton2:hover{
+        @include botonHover;
+    }
 }
+
+footer{
+    margin-top: 7rem;
+    background-color: rgba(240, 235, 235, 0.931);
+    padding: 2rem 5rem 1rem 5rem;
+    .footerLogo{
+        width: 20%;
+        img{
+            width: 25%;
+        }
+    }
+    .footerMenu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;
+        margin-right: 3rem;
+        padding-left: 0;
+    ul{
+        li{
+            list-style: none;
+            display: inline-block;
+            font-size: 1rem;
+            margin-right: 3rem;
+            font-weight: 500;
+            a{
+                text-decoration: none;
+                color: $darkGrayishBlue;
+                
+            }
+            a:hover,
+            a:active{
+            color: $strongCyan;
+            }              
+        }
+    }
+    }
+    .footerSocial{
+        width: 20%;
+        ul{
+            li{
+                list-style: none;
+                display: inline-block;
+                margin-right: 1.5rem;  
+                font-size: 1.2rem;
+                a{
+                    text-decoration: none;
+                    color: $darkGrayishBlue;
+                }
+            }
+        }
+        .fa-facebook-f:hover{
+            color: #3b5998;
+        }
+        
+        .fa-twitter:hover{
+            color: #00aced;
+        }
+        
+        .fa-instagram:hover{
+            color: #517fa4;
+        }
+    }
+}
+
