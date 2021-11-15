@@ -163,7 +163,7 @@ footer{
 }
 
 @media only screen and (max-width: 376px){
-    .seccion1, .seccion2, .seccion3, .seccion4{
+    .seccion1, .seccion2, .seccion3, .seccion4, .seccion5{
         margin: 0 1rem;
         .para{
             padding: 0 1.1rem;
@@ -217,9 +217,10 @@ footer{
         }
     }
     .seccion4{
+        margin-top: 5rem;
         .iconos{
-            margin: 5rem 5rem 0 5rem;
-            display: flex;
+            margin: 5rem 0  0 0 ;
+            display: block;
             img{
                 margin-bottom: 2rem;
                 width: 10%;
@@ -230,14 +231,91 @@ footer{
             }
             .iconoCol{
                 text-align: center;
-                width: 33%;
-                padding: 2rem;
+                width: 100%;
+                padding: 0;
+                margin-top: 3rem;
                 p{
                     font-size: 1rem;
                 }
             }
         }
+        .iconos2{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 7rem;
+            justify-content: center;
+            gap: 5.5rem;
+        }
     }
-}
+    .seccion5{
+        margin-top: 7rem;
+        text-align: center;
+        .para{
+            padding: 0 1.2rem;
+        }
+        .botones{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .boton1, .boton2{
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+                padding: 1rem 5rem;
+            }
+        }
+        
+    }
+    footer{
+        margin-top: 7rem;
+        background-color: rgba(240, 235, 235, 0.931);
+        padding: 2rem 5rem 1rem 5rem;
+        .row{
+            text-align: center;
+        }
+        .footerLogo{
+            width: 100%;
+            margin-top: 3rem;
+            img{
+                width: 40%;
+            }
+        }
+        .footerMenu{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin: 2rem 0;
+            padding-left: 0;
+            ul{
+                padding-left: 0;
+                li{
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                    a{
+                        text-decoration: none;
+                        color: $darkGrayishBlue;
+                        margin-bottom: .5rem;
+                    }
+                    a:hover,
+                    a:active{
+                    color: $strongCyan;
+                    }              
+                }
+            }
+        }
+        .footerSocial{
+            width: 20%;
+            ul{
+                padding-left: 0;
+                li{
+                    display: inline-block;
+                    padding: .5rem;  
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}    
+
 
 
