@@ -19,6 +19,10 @@ header {
     header .imgHeader img {
       width: 10%; }
 
+@media only screen and (max-width: 376px) {
+  header .imgHeader img {
+    width: 50%; } }
+
 h1, h2 {
   color: #4c545d;
   text-align: center; }
@@ -44,6 +48,12 @@ p {
   line-height: 1.8rem;
   font-size: 1.15rem;
   font-weight: 400; }
+
+@media only screen and (max-width: 376px) {
+  h1 {
+    font-size: 2rem; }
+  p {
+    font-size: 1rem; } }
 
 .seccion1 {
   text-align: center; }
@@ -193,3 +203,56 @@ footer {
       color: #00aced; }
     footer .footerSocial .fa-instagram:hover {
       color: #517fa4; }
+
+@media only screen and (max-width: 376px) {
+  .seccion1, .seccion2, .seccion3, .seccion4 {
+    margin: 0 1rem; }
+    .seccion1 .para, .seccion2 .para, .seccion3 .para, .seccion4 .para {
+      padding: 0 1.1rem; }
+    .seccion1 .botones, .seccion2 .botones, .seccion3 .botones, .seccion4 .botones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .seccion1 .botones .boton1, .seccion1 .botones .boton2, .seccion2 .botones .boton1, .seccion2 .botones .boton2, .seccion3 .botones .boton1, .seccion3 .botones .boton2, .seccion4 .botones .boton1, .seccion4 .botones .boton2 {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+        padding: 1rem 5rem; }
+  .seccion2 .computerGrid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr; }
+    .seccion2 .computerGrid .imgGrid {
+      text-align: center; }
+    .seccion2 .computerGrid img {
+      width: 90%;
+      margin-left: 0; }
+    .seccion2 .computerGrid .computerText {
+      padding: 0;
+      margin-top: 5rem;
+      width: 100%;
+      text-align: center; }
+      .seccion2 .computerGrid .computerText h3 {
+        margin-bottom: .5rem;
+        font-size: 1.5rem; }
+      .seccion2 .computerGrid .computerText p {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        padding: 1.1rem; }
+  .seccion3 .imgCel img {
+    width: 95%; }
+  .seccion4 .iconos {
+    margin: 5rem 5rem 0 5rem;
+    display: flex; }
+    .seccion4 .iconos img {
+      margin-bottom: 2rem;
+      width: 10%;
+      height: 15%; }
+    .seccion4 .iconos h3 {
+      padding: 1rem; }
+    .seccion4 .iconos .iconoCol {
+      text-align: center;
+      width: 33%;
+      padding: 2rem; }
+      .seccion4 .iconos .iconoCol p {
+        font-size: 1rem; } }
